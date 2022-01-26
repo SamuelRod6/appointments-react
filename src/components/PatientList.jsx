@@ -38,7 +38,7 @@ function PatientList({patients, setPatient, removePatient}) {
           </h2>
           <p className="text-lg mt-5 mb-10 text-center">
             Empieza a agregar {' '}
-            <span className="text-indigo-400 font-bold">Pacientes y Citas:</span>
+            <span className="text-purple-700 font-bold">Pacientes y Citas:</span>
           </p>
 
           <div className="bg-white shadow-md px-5 py-8 rounded-xl m-3">
