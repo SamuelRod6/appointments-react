@@ -36,7 +36,7 @@ function Patient({patient, setPatient, removePatient}) {
       <button
         type='button'
         onClick={() => setPatient(patient)}
-        className='py-2 px-10 bg-indigo-400 hover:bg-indigo-600 
+        className='py-2 px-10 bg-purple-700 hover:bg-purple-800 
         text-white font-bold rounded-lg'>
         Editar
       </button>

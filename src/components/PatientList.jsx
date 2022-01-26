@@ -15,7 +15,7 @@ function PatientList({patients, setPatient, removePatient}) {
         </h2>
         <p className="text-lg mt-5 mb-7 text-center">
           Revisa la lista de {' '}
-          <span className="text-indigo-400 font-bold">Pacientes y Citas: </span>
+          <span className="text-purple-700 font-bold">Pacientes y Citas: </span>
         </p>
 
         <div className="md:h-screen overflow-y-auto">

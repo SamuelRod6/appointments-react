@@ -4,7 +4,7 @@ function Header() {
     <h1 className="font-black text-5xl text-center">
       Seguimiento de Pacientes
       <br />
-      <span className="text-indigo-400"> Consultorio</span>
+      <span className="text-purple-700"> Consultorio</span>
     </h1>
 )
 

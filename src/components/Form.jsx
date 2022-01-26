@@ -80,7 +80,7 @@ function Form({patients, setPatients, patient, setPatient}) {
       </h2>
       <p className="text-lg mt-5 mb-10 text-center">
         Añadir {' '}
-        <span className="text-indigo-400 font-bold">Pacientes:</span>
+        <span className="text-purple-700 font-bold">Pacientes:</span>
       </p>
 
       <form
@@ -101,7 +101,7 @@ function Form({patients, setPatients, patient, setPatient}) {
           <input
             id="name"
             type="text" 
-            placeholder="Escribe tu nombre"
+            placeholder="Nombre del paciente"
             value={name}
             onChange={(e) => setName(e.target.value)}
             autoFocus
@@ -160,7 +160,7 @@ function Form({patients, setPatients, patient, setPatient}) {
           </label>
           <textarea
             id="síntomas" 
-            placeholder="Describa sus síntomas"
+            placeholder="Describa los síntomas"
             value={symptoms}
             onChange={(e) => setSymptoms(e.target.value)} 
             className="border-2 w-full p-2 mt-1 placeholder-gray-400 
@@ -170,7 +170,7 @@ function Form({patients, setPatients, patient, setPatient}) {
         <input 
         type="submit" 
         value={ patient.id ? "Editar Paciente" : "Añadir Paciente"}
-        className="bg-indigo-400 hover:bg-indigo-700 
+        className="bg-purple-700 hover:bg-purple-800
         text-white font-bold uppercase w-full py-2 px-4 rounded-lg 
         mt-5 cursor-pointer transition-colors"
         />
