@@ -71,6 +71,14 @@ function Form({patients, setPatients, patient, setPatient}) {
     setDate('')
     setSymptoms('')
   }
+
+  // Formats the date
+  const today = new Date()
+  const minDate = today.getFullYear() + '-' +
+  ('0'+today.getMonth()+1).slice(-2) + '-' +
+  today.getDate()
+ 
+  console.log(minDate)
   
   return (    
     <div className="md:w-1/2 lg:w-2/5"> 
@@ -147,6 +155,7 @@ function Form({patients, setPatients, patient, setPatient}) {
           <input
             id="alta"
             type="date"
+            min={minDate}
             value={date}
             onChange={(e) => setDate(e.target.value)}
             className="border-2 w-full p-2 mt-1 placeholder-gray-400 rounded-lg"
