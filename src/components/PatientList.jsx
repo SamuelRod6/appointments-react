@@ -1,10 +1,12 @@
 import Patient from "./Patient"
 
-function PatientList({patients, setPatient}) {
+
+function PatientList({patients, setPatient, removePatient}) {
 
   return (
     <div className="md:w-1/2 lg:w-3/5 h-screen"> 
-    
+
+      {/* List the patients or show a message if there are no patients */}
       {patients && patients.length ? (
         <>
         <h2 
@@ -23,6 +25,7 @@ function PatientList({patients, setPatient}) {
                   key={patient.id}
                   patient={patient}
                   setPatient={setPatient}
+                  removePatient={removePatient}
                 />
             ))}
         </div>
