@@ -1,29 +1,46 @@
-import React from 'react';
 
-function Patient() {
+function Patient({patient, setPatient}) {
+
+    const {name, phone, email, date, symptoms} = patient;
 
   return (
-    <div className="bg-white shadow-md px-5 py-8 rounded-lg m-3">
+    <div className="bg-white shadow-md px-5 py-8 rounded-xl m-3">
     <p className="font-bold mb-3 text-gray-600 ">
       Nombre:{' '}
-      <span className="font-normal normal-case">Samuel</span>
+      <span className="font-normal normal-case">{name}</span>
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Número de contacto:{' '}
-      <span className="font-normal normal-case">+1 1234567</span>
+      <span className="font-normal normal-case">{phone}</span>
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Email:{' '}
-      <span className="font-normal normal-case">samuel@email.com</span>
+      <span className="font-normal normal-case">{email}</span>
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Fecha del Alta:{' '}
-      <span className="font-normal normal-case">30/01/22</span>
+      <span className="font-normal normal-case">{date}</span>
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Síntomas:{' '}
-      <span className="font-normal normal-case">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus dolorem ex officia tempora. Culpa quia fuga et sit, maiores, quae sequi tempora perferendis repellat neque est voluptatem, aliquam tenetur?</span>
+      <span className="font-normal normal-case">{symptoms}</span>
     </p>
+    
+    <div className='flex justify-between mt-5'>
+      <button
+        type='button'
+        onClick={() => setPatient(patient)}
+        className='py-2 px-10 bg-indigo-400 hover:bg-indigo-600 
+        text-white font-bold rounded-lg'>
+        Editar
+      </button>
+      <button
+        type='button'
+        className='py-2 px-10 bg-red-600 hover:bg-red-700 
+        text-white font-bold rounded-lg'>
+        Eliminar
+      </button>
+    </div>
   </div>
   )
 }
