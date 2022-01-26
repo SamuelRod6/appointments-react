@@ -9,6 +9,8 @@ function Patient({patient, setPatient, removePatient}) {
     }
   }
 
+  const formattedDate = new Date(date).toLocaleDateString("en-US")
+
   return (
     <div className="bg-white shadow-md px-5 py-8 rounded-xl m-3">
     <p className="font-bold mb-3 text-gray-600 ">
@@ -25,7 +27,7 @@ function Patient({patient, setPatient, removePatient}) {
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Fecha del Alta:{' '}
-      <span className="font-normal normal-case">{date}</span>
+      <span className="font-normal normal-case">{formattedDate}</span>
     </p>
     <p className="font-bold mb-3 text-gray-600 ">
       Síntomas:{' '}
