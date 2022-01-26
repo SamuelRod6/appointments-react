@@ -1,3 +1,3 @@
 # appointments-react
 
-Link: https://laughing-curie-8e4a6f.netlify.app/
+Link: https://appointments-react.netlify.app/
